@@ -1,0 +1,15 @@
+extends layout.pug
+
+block gameDesc
+	.jumbotron
+		h1 Be the fastest to win
+		h2 One picture, one question, 4 answers to choose from, and 15 seconds
+		h2 One correct answer, only one player can win
+		p Only one player can submit an answer : the fastest one
+		p The fastest player who has correctly answered the question wins the round
+		p Move on to the next question to get a rematch
+		p The player who has answered the most questions correctly wins the game
+		p Register or sign in to start playing
+	if (user)
+		p You are currently logged in as #{user.username}
+		a(href="/logout") Logout

@@ -1,0 +1,21 @@
+extends layout.pug
+
+block signInForm
+	.col-md-12.register
+		form.form-inline(action='/signin', method='post', accept-charset='utf-8')
+			h2 Sign in
+			br
+			.form-group
+				label(for='name') Username
+				br
+				input.form-control(type='test', name='username', placeholder='Your funky email address')
+			br
+			br
+			.form-group
+				label(for='name') Password
+				br
+				input.form-control(type='password', name='password', placeholder='Your tricky password')
+			br
+			br
+			input.btn.btn-lg.btn-success(type='submit')
+
