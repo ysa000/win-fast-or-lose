@@ -1,8 +1,9 @@
-var express = require('express');
+var app = require('express')();
+var http = require('http').Server(app);
 var passport = require('passport');
 var User = require('../models/user');
+var io = require('socket.io')(http);
 
-var app = express();
 
 module.exports = function(app, passport) {
 

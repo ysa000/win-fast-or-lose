@@ -1,5 +1,7 @@
 // ===== Dépendances =====
-var express = require('express');
+var app = require('express')();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 var port = process.env.PORT || 8080;
 var mongoose = require('mongoose');
 var passport = require('passport');
@@ -9,14 +11,13 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var configDB = require('./config/database');
 
-var app = express();
 
 // Set up des views
 app.set('views', './views');
 app.set('view engine', 'pug');
 
 // ===== Set up de l'app Express =====
-app.use(express.static('public'));
+app.use(require('express').static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: false
@@ -46,7 +47,7 @@ passport.deserializeUser(User.deserializeUser());
 mongoose.connect(configDB.url);
 
 function startServer() {
-	app.listen(port, function() {
+	http.listen(port, function() {
 		console.log('Le serveur est disponible sur le port ' + port);
 	});
 }
@@ -107,3 +108,10 @@ function setupDatabase(callback) { // Déclaration d'une fonction avec pour para
 		}
 	});
 }
+
+io.on('connection', function(socket) {
+	console.log('user connected on win fast or lose');
+	socket.on('disconnect', function() {
+		console.log('user disconnected from win fast or lose');
+	});
+});
