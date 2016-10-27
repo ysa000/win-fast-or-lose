@@ -110,8 +110,15 @@ function setupDatabase(callback) { // Déclaration d'une fonction avec pour para
 }
 
 io.on('connection', function(socket) {
+	// Msg envoyé du server
 	console.log('user connected on win fast or lose');
+	// Msg envoyé du client
+	socket.on('clientEvent', function(data) {
+			console.log(data);
+		});
+	// Msg envoyé du server
 	socket.on('disconnect', function() {
 		console.log('user disconnected from win fast or lose');
 	});
+
 });
