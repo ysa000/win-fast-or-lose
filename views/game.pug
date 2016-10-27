@@ -1,0 +1,15 @@
+extends layout.pug
+
+block gameDiv
+	.col-md-12
+		.game
+			h3 Who am I ?
+			img(src='/img/Cheshire_Cat.png', alt='cheschire_cat' class='game-img')
+			div#answers-btn1
+				button.btn.btn-lg.btn-default.answers-btn-left(type='button') Rocky
+				button.btn.btn-lg.btn-default.answers-btn-right(type='button') Cheschire Cat
+			div#answers-btn2
+				button.btn.btn-lg.btn-default.answers-btn-left(type='button') Grumpy Cat
+				button.btn.btn-lg.btn-default.answers-btn-right(type='button') Garfield
+			div
+				button.btn.btn-info.submit-btn(type="button") Submit

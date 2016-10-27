@@ -1,6 +1,13 @@
 extends layout.pug
 
 block gameDesc
+	if (user)
+		.container
+			p You are currently logged in as #{user.username}
+			a(href='/game')
+				button.btn.btn-sm.btn-primary(type='button') Play
+			a(href='/logout')
+				button.btn.btn-sm.btn-danger(type='button') Log out
 	.jumbotron
 		h1 Be the fastest to win
 		h2 One picture, one question, 4 answers to choose from, and 15 seconds
@@ -10,6 +17,3 @@ block gameDesc
 		p Move on to the next question to get a rematch
 		p The player who has answered the most questions correctly wins the game
 		p Register or sign in to start playing
-	if (user)
-		p You are currently logged in as #{user.username}
-		a(href="/logout") Logout

@@ -49,6 +49,11 @@ module.exports = function(app, passport) {
 			});
 		});
 
+	// Page de jeu
+	app.get('/game', function(req, res) {
+		res.render('game');
+	});
+
 	// Déconnexion
 	app.get('/logout', function(req, res, next) {
 		req.logout();

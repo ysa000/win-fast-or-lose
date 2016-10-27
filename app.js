@@ -1,15 +1,13 @@
 // ===== Dépendances =====
 var express = require('express');
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 8080;
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-// var session = require('express-session');
 var configDB = require('./config/database');
-// var routeApi = require('./app/routes');
 
 var app = express();
 
@@ -46,8 +44,6 @@ passport.deserializeUser(User.deserializeUser());
 
 // ===== Connexion à la db mongoose =====
 mongoose.connect(configDB.url);
-
-
 
 function startServer() {
 	app.listen(port, function() {
