@@ -1,9 +1,11 @@
 extends layout.pug
 
+
 block gameDesc
 	if (user)
 		.container
 			p You are currently logged in as #{user.username}
+			p#numberUsers
 			a(href='/game')
 				button.btn.btn-sm.btn-primary(type='button') Play
 			a(href='/logout')

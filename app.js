@@ -109,16 +109,25 @@ function setupDatabase(callback) { // Déclaration d'une fonction avec pour para
 	});
 }
 
+var clients = 0;
 io.on('connection', function(socket) {
 	// Msg envoyé du server
-	console.log('user connected on win fast or lose');
+		// console.log('user connected on win fast or lose');
+
+	// Gestion du nombre de users connectés lors d'une connexion
+	clients++;
+	io.sockets.emit('broadcast', { description: clients + ' users connected' });
+
 	// Msg envoyé du client
-	socket.on('clientEvent', function(data) {
-			console.log(data);
-		});
-	// Msg envoyé du server
+		// socket.on('clientEvent', function(data) {
+		// 		console.log(data);
+		// 	});
 	socket.on('disconnect', function() {
-		console.log('user disconnected from win fast or lose');
+		// Gestion du nombre de users connectés lors d'une déco
+		clients--;
+		io.sockets.emit('broadcast', {description : clients + ' users connected'});
+	// Msg envoyé du server
+		// console.log('user disconnected from win fast or lose');
 	});
 
 });

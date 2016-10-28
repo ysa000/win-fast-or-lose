@@ -29,8 +29,9 @@ html(lang='en')
 		script(src='/socket.io/socket.io.js')
 		script.
 			var socket = io();
-			// Emission d'un msg du client
-			socket.emit('clientEvent', 'Sent from the client');
+			socket.on('broadcast',function(data){
+			document.getElementById("numberUsers").innerHTML = data.description;
+			});
 	body
 		// Fixed navbar
 		nav.navbar.navbar-inverse.navbar-fixed-top
