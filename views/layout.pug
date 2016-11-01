@@ -21,18 +21,9 @@ html(lang='en')
 		//if lt IE 9
 			script(src='../../assets/js/ie8-responsive-file-warning.js')
 		script(src='/js/assets/ie-emulation-modes-warning.js')
-		// HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
-		//if lt IE 9
-			script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
-			script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
 		// Connection client / server Socket.IO
-		script(src='/socket.io/socket.io.js')
-		script.
-			var socket = io();
-			socket.on('broadcast',function(data){
-			document.getElementById("numberUsers").innerHTML = data.description;
-			});
-	body
+
+	body(ng-app='quizApp')
 		// Fixed navbar
 		nav.navbar.navbar-inverse.navbar-fixed-top
 			.container
@@ -59,9 +50,7 @@ html(lang='en')
 			block registrationCheck
 			block gameDiv
 
-			// Bootstrap core JavaScript
-			// =================================================
-		// Placed at the end of the document so the pages load faster
+		// Bootstrap core JavaScript
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js')
 		script.
 			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
@@ -69,3 +58,23 @@ html(lang='en')
 		script(src='/js/assets/docs.min.js')
 		// IE10 viewport hack for Surface/desktop Windows 8 bug
 		script(src='/js/assets/ie10-viewport-bug-workaround.js')
+
+
+		// Script socket.io
+		script(src='/socket.io/socket.io.js')
+		//- script(src='/angular-socket-io/socket.js')
+		//- script.
+		//- 	var socket = io();
+		//- 	socket.on('broadcast', function(data) {
+		//- 		document.getElementById("numberUsers").innerHTML = data.description;
+		//- 	});
+
+		// Script angularJS
+		// Temp, TODO: remove this /node_modules
+		script(src='/angular/angular.js')
+		script(src='/angular-route/angular-route.js')
+		script(src='/angular-socket-io/socket.js')
+		script(src='/js/app.js')
+		script(src='/js/services.js')
+		script(src='/js/controllers.js')
+		script(src='/js/directives.js')

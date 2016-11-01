@@ -1,6 +1,7 @@
 // ===== Dépendances =====
-var app = require('express')();
-var http = require('http').Server(app);
+var express = require('express');
+var app = express();
+var http = require('http').createServer(app);
 var io = require('socket.io')(http);
 var port = process.env.PORT || 8080;
 var mongoose = require('mongoose');
@@ -10,6 +11,7 @@ var flash = require('connect-flash');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var configDB = require('./config/database');
+var _ = require('lodash');
 
 
 // Set up des views
@@ -17,7 +19,9 @@ app.set('views', './views');
 app.set('view engine', 'pug');
 
 // ===== Set up de l'app Express =====
-app.use(require('express').static('public'));
+app.use(express.static('public'));
+app.use(express.static('node_modules'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: false
@@ -109,25 +113,49 @@ function setupDatabase(callback) { // Déclaration d'une fonction avec pour para
 	});
 }
 
-var clients = 0;
+// utilisateurs  identifiés connectés en socket
+var connectedUsers = [];
+
 io.on('connection', function(socket) {
-	// Msg envoyé du server
-		// console.log('user connected on win fast or lose');
+	console.log('new socket connected')
 
-	// Gestion du nombre de users connectés lors d'une connexion
-	clients++;
-	io.sockets.emit('broadcast', { description: clients + ' users connected' });
-
-	// Msg envoyé du client
-		// socket.on('clientEvent', function(data) {
-		// 		console.log(data);
-		// 	});
 	socket.on('disconnect', function() {
-		// Gestion du nombre de users connectés lors d'une déco
-		clients--;
-		io.sockets.emit('broadcast', {description : clients + ' users connected'});
-	// Msg envoyé du server
-		// console.log('user disconnected from win fast or lose');
+		// on retire l'utilisateur du tableau (s'il était connecté)
+		connectedUsers = _.reject(connectedUsers, socket);
+
+		// Nb de users connectés après une déco
+		socketStatus();
+
 	});
 
+	socket.on('userAuth', function(user) {
+
+		socket.username = user.username;
+
+		var userSocketFound = _.find(connectedUsers, { username: user.username });
+
+		// on doit mettre à jour / changer la socket de cet utilisateur, car on autorise qu'une seule connexon socket par utilisteur.
+		if (userSocketFound !== undefined) {
+			connectedUsers = _.reject(connectedUsers, userSocketFound);
+
+			// On force le disconnect sans attendre le timeout
+			userSocketFound.disconnect();
+		}
+
+		// Dans tous les cas, on ajoute la bonne (nouvelle) socket de l'utilisateur au tableau
+		connectedUsers.push(socket);
+
+		console.log('Utilisateur déclaré:', user);
+
+		// Bienvenue au nouveau client connecté
+		socket.emit('newuserconnect', { description: 'You are currently logged in as ' + socket.username + ' !' });
+
+		// Nb de users connectés après une connexion
+		socketStatus();
+	})
+
 });
+
+function socketStatus() {
+	io.sockets.emit('status', {description : 'There are ' + connectedUsers.length + ' users connected'});
+}

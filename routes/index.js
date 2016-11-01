@@ -7,6 +7,10 @@ var io = require('socket.io')(http);
 
 module.exports = function(app, passport) {
 
+	app.get('/', function(req, res) {
+		res.render('home', { user : req.user });
+	});
+
 	// Page d'accueil avec la desc du jeu
 	app.get('/home', function(req, res) {
 		res.render('home', { user : req.user });
@@ -36,11 +40,11 @@ module.exports = function(app, passport) {
 
 	// Page de login
 	app.get('/signin', function(req, res) {
-		res.render('signin', { user: req.user, error: req.flash('error')});
+		res.render('signin', { user: req.user, error: req.flash('error') });
 	});
 
 	// Page de confirmation de login
-	app.post('/signin', passport.authenticate('local', {failureRedirect: '/signin', failureFlash: true }),
+	app.post('/signin', passport.authenticate('local', { failureRedirect: '/signin', failureFlash: true }),
 		function(req, res, next) {
 			req.session.save(function(err) {
 				if (err) {
@@ -64,6 +68,16 @@ module.exports = function(app, passport) {
 			}
 			res.redirect('/home');
 		});
+	});
+
+	// Page user loggé
+	app.get('/api/me', function(req, res) {
+		console.log('req', req.user)
+		if (req.isAuthenticated()) {
+			res.json(req.user);
+		} else {
+			res.json({ loggedin: false });
+		}
 	});
 
 	app.get('/ping', function(req, res) {

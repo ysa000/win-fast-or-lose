@@ -1,11 +1,13 @@
 extends layout.pug
 
-
 block gameDesc
 	if (user)
 		.container
-			p You are currently logged in as #{user.username}
-			p#numberUsers
+			div(ng-controller='AppCtrl')
+				p {{ newclientconnect }}
+				p You are currently logged in as #{user.username}
+				p status: {{ status }}
+				p me: {{ me }}
 			a(href='/game')
 				button.btn.btn-sm.btn-primary(type='button') Play
 			a(href='/logout')

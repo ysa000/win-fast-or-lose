@@ -9,5 +9,5 @@ var User = new Schema({
 
 User.plugin(passportLocalMongoose);
 
-// Créé le modèle pour les users pour l'exposer à l'app
+// Créé le modèle users pour l'exposer à l'app
 module.exports = mongoose.model('users', User);

@@ -1,0 +1,2136 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"p",
+				"pages"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"pass",
+				"passportLocalMongoose"
+			],
+			[
+				"pa",
+				"passport"
+			],
+			[
+				"new",
+				"newUser"
+			],
+			[
+				"Local",
+				"LocalStrategy"
+			],
+			[
+				"user",
+				"userSchema"
+			],
+			[
+				"conf",
+				"configDB"
+			],
+			[
+				"mong",
+				"mongoose"
+			],
+			[
+				"route",
+				"routeApi"
+			],
+			[
+				"parties",
+				"partiesList"
+			],
+			[
+				"Game",
+				"backEndGameCtrl"
+			],
+			[
+				"back",
+				"backEndGameCtrl"
+			],
+			[
+				"set",
+				"setToPrivate"
+			],
+			[
+				"to",
+				"todosList"
+			],
+			[
+				"T",
+				"TodosListCtrl"
+			],
+			[
+				"angular",
+				"angularMeteor"
+			],
+			[
+				"form",
+				"formTitle"
+			],
+			[
+				"angul",
+				"angularMeteor"
+			],
+			[
+				"rootS",
+				"rootScope"
+			],
+			[
+				"f",
+				"for\tfor (…) {…}"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"on",
+				"onReady"
+			],
+			[
+				"ang",
+				"angular-meteor"
+			],
+			[
+				"create",
+				"create-carre"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"HTM",
+				"HTMLpElement"
+			],
+			[
+				"HT",
+				"HTMLpElement"
+			],
+			[
+				"car",
+				"charset\tAttr"
+			],
+			[
+				"We",
+				"webSocketClient"
+			],
+			[
+				"webSo",
+				"webSocketConnection"
+			],
+			[
+				"utf",
+				"utf8Data"
+			],
+			[
+				"message",
+				"message-display"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"disp",
+				"displayElsewhere2"
+			],
+			[
+				"my",
+				"myPort"
+			],
+			[
+				"ma",
+				"map"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"addre",
+				"addressHost"
+			],
+			[
+				"address",
+				"addressHost"
+			],
+			[
+				"liste",
+				"listeningPort"
+			],
+			[
+				"lis",
+				"listeningPort"
+			],
+			[
+				"por",
+				"portListening"
+			],
+			[
+				"style",
+				"style\tAttr"
+			],
+			[
+				"font-f",
+				"font-family"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"exercice",
+				"exercice02"
+			],
+			[
+				"exer",
+				"exercie01"
+			],
+			[
+				"increment",
+				"incrementing"
+			],
+			[
+				"incre",
+				"incrementing"
+			],
+			[
+				"sc",
+				"sceDelegateProvider"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"ex",
+				"exercice_01"
+			],
+			[
+				"show",
+				"showsManagerFactory"
+			],
+			[
+				"tv",
+				"tvMazeAPI"
+			],
+			[
+				"adre",
+				"adresseHote"
+			],
+			[
+				"query",
+				"queryString"
+			],
+			[
+				"change",
+				"changeTitle"
+			],
+			[
+				"dir",
+				"dirObj"
+			],
+			[
+				"angu",
+				"angularjsExercice3Module2"
+			],
+			[
+				"ser",
+				"serviceProviderProvider"
+			],
+			[
+				"service",
+				"serviceProvider"
+			],
+			[
+				"static",
+				"staticTitle"
+			],
+			[
+				"dyna",
+				"dynamicTitle"
+			],
+			[
+				"dy",
+				"dynamicTitle"
+			],
+			[
+				"stric",
+				"strictDi"
+			],
+			[
+				"reviews",
+				"reviewsManager"
+			],
+			[
+				"filteredTe",
+				"filteredText1"
+			],
+			[
+				"object",
+				"objetDéfinissantDirective"
+			],
+			[
+				"ob",
+				"objetDéfinissantDirective"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"section",
+				"sectionNumber"
+			],
+			[
+				"paht",
+				"pathname"
+			],
+			[
+				"conte",
+				"Content-Type"
+			],
+			[
+				"url",
+				"urlObj"
+			],
+			[
+				"con",
+				"Content-Type"
+			],
+			[
+				"file",
+				"filePath"
+			],
+			[
+				"fi",
+				"filePath"
+			],
+			[
+				"C",
+				"Content-Type"
+			],
+			[
+				"Conten",
+				"Content-Type"
+			],
+			[
+				"Conte",
+				"Content-Length"
+			],
+			[
+				"write",
+				"writeHead"
+			],
+			[
+				"char",
+				"charset\tAttr"
+			],
+			[
+				"Ala",
+				"Atlantic"
+			],
+			[
+				"Atlan",
+				"Atlantic"
+			],
+			[
+				"Atla",
+				"Atlantic"
+			],
+			[
+				"dis",
+				"distanceArray"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"code",
+				"codePostal"
+			],
+			[
+				"sort",
+				"sortedDistance"
+			],
+			[
+				"lon",
+				"lonDunois"
+			],
+			[
+				"lat",
+				"latDunois"
+			],
+			[
+				"heber",
+				"hebergeur"
+			],
+			[
+				"he",
+				"hebergeur"
+			],
+			[
+				"heb",
+				"hebergeur"
+			],
+			[
+				"rest",
+				"restaurant"
+			],
+			[
+				"res",
+				"restaurant"
+			],
+			[
+				"cur",
+				"cursorRestaurants"
+			],
+			[
+				"h",
+				"hebergeurs"
+			],
+			[
+				"traffic",
+				"traffic"
+			],
+			[
+				"avg",
+				"avgRating"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"resta",
+				"restaurant"
+			],
+			[
+				"restau",
+				"restaurantsCursor"
+			],
+			[
+				"hel",
+				"healthy_food"
+			],
+			[
+				"acc",
+				"acces_handicapé"
+			],
+			[
+				"ga",
+				"gameOver"
+			],
+			[
+				"happ",
+				"happyEnd"
+			],
+			[
+				"you",
+				"youLost"
+			],
+			[
+				"game",
+				"gameSounds"
+			],
+			[
+				"ha",
+				"happyEnd"
+			],
+			[
+				"en",
+				"endGame"
+			],
+			[
+				"villa",
+				"villainHit"
+			],
+			[
+				"logo",
+				"logoHit"
+			],
+			[
+				"log",
+				"logoHit"
+			],
+			[
+				"lo",
+				"logoHit"
+			],
+			[
+				"vi",
+				"villainHit"
+			],
+			[
+				"btn",
+				"btnCv"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"fill",
+				"fillStyle"
+			],
+			[
+				"in",
+				"introGameText"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sni",
+				"Snippet: html"
+			],
+			[
+				"set h",
+				"Set Syntax: HTML"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"convert to sp",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sn",
+				"Snippet: html"
+			],
+			[
+				"set syn hm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"set ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"set htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set hm",
+				"Set Syntax: HTML"
+			],
+			[
+				"set ja",
+				"Set Syntax: JavaDoc"
+			],
+			[
+				"set",
+				"Set Syntax: Jade"
+			],
+			[
+				"lo",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"set hmt",
+				"Set Syntax: HTML"
+			],
+			[
+				"set jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"s",
+				"Snippet: html"
+			],
+			[
+				"syntax htl",
+				"Set Syntax: HTML"
+			],
+			[
+				"snip",
+				"Snippet: html"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"htm",
+				"Snippet: html"
+			],
+			[
+				"lor",
+				"github: open file on remote"
+			],
+			[
+				"l",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"lore",
+				"github: open file on remote"
+			],
+			[
+				"git diff in",
+				"git: diff current file inline"
+			],
+			[
+				"git diff curent i",
+				"git: diff current file inline"
+			],
+			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"pref",
+				"Preferences: Settings - User"
+			],
+			[
+				"lint",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"floot",
+				"Floobits - Join Workspace"
+			],
+			[
+				"comple",
+				"Floobits - Complete Sign Up"
+			],
+			[
+				"git diff inl",
+				"git: diff current file inline"
+			],
+			[
+				"filedif",
+				"FileDiffs: Menu"
+			],
+			[
+				"user ",
+				"Preferences: Settings - User"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"clos",
+				"File: Close All"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"package setting",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git diff",
+				"Git: Diff"
+			],
+			[
+				"git diff cu",
+				"git: diff current file inline"
+			],
+			[
+				"gitcheckout cu",
+				"Git: Checkout Current File"
+			],
+			[
+				"git checkout cu",
+				"Git: Checkout Current File"
+			],
+			[
+				"git diff inli",
+				"git: diff current file inline"
+			],
+			[
+				"git blame ",
+				"git: blame current file"
+			],
+			[
+				"git blame",
+				"git: blame current file"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"git log",
+				"git: log current file"
+			],
+			[
+				"git checout cu",
+				"Git: Checkout Current File"
+			],
+			[
+				"clo",
+				"File: Close All"
+			],
+			[
+				"git blame cu",
+				"git: blame current file"
+			],
+			[
+				"git dif f",
+				"Git: Diff"
+			],
+			[
+				"git bla",
+				"git: blame current file"
+			],
+			[
+				"git checko",
+				"Git: Checkout Current File"
+			],
+			[
+				"git diff ",
+				"Git: Diff"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"git quick log",
+				"Git: Quick Log Current File"
+			],
+			[
+				"git log cur",
+				"git: log current file"
+			],
+			[
+				"snake",
+				"Convert Case: snake_case"
+			],
+			[
+				"cam",
+				"Convert Case: camelCase"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"lint this",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"git diff curr",
+				"Git: Diff Current File"
+			],
+			[
+				"filed",
+				"FileDiffs: Menu"
+			],
+			[
+				"git  blame cu",
+				"git: blame current file"
+			],
+			[
+				"git diffi n",
+				"git: diff current file inline"
+			],
+			[
+				"git difff",
+				"Git: Diff Current File"
+			],
+			[
+				"git log cu",
+				"git: log current file"
+			],
+			[
+				"git checkout cur",
+				"git: checkout current file"
+			],
+			[
+				"git dif",
+				"Git: Diff"
+			],
+			[
+				"git diff cur",
+				"git: diff current file inline"
+			],
+			[
+				"git diff  cur",
+				"git: diff current file inline"
+			],
+			[
+				"toggl",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"git diff i",
+				"git: diff current file inline"
+			],
+			[
+				"filediff",
+				"FileDiffs: Menu"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"file",
+				"FileDiffs: Menu"
+			],
+			[
+				"CLOSE",
+				"File: Close All"
+			],
+			[
+				"git blame c",
+				"git: blame current file"
+			],
+			[
+				"git loc",
+				"git: log current file"
+			],
+			[
+				"git checkout  cu",
+				"Git: Checkout Current File"
+			],
+			[
+				"text",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"git checkout ",
+				"Git: Checkout Current File"
+			],
+			[
+				"git checkut cu",
+				"Git: Checkout Current File"
+			],
+			[
+				"git check",
+				"Git: Checkout Current File"
+			],
+			[
+				"git log ",
+				"git: log current file"
+			],
+			[
+				"1 x",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"0 to ",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"textpastry ",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"0 x",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"text pastry",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"dupl",
+				"Duplicate Selections"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"git checkout curr",
+				"Git: Checkout Current File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"cl",
+				"File: Close All"
+			],
+			[
+				"git ",
+				"Git: Blame"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"syntax: css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syntax: js",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"config",
+				"Set Syntax: EditorConfig"
+			],
+			[
+				"git b",
+				"Git: Blame"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"git blam",
+				"git: blame current file"
+			],
+			[
+				"came",
+				"Convert Case: camelCase"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"diffcu",
+				"git: diff current file inline"
+			],
+			[
+				"diff inl",
+				"git: diff current file inline"
+			],
+			[
+				"convertcase",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"bakc",
+				"Convert Case: separate\\with\\backslash"
+			],
+			[
+				"jsonr",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"SublimeGit: Install License",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/ysa/Desktop/quiz-express-auth"
+	],
+	"file_history":
+	[
+		"/home/ysa/Desktop/quiz-express-auth/db.js",
+		"/home/ysa/Desktop/quiz-express-auth/authentication.js",
+		"/home/ysa/Documents/dev/socket-chat/package.json",
+		"/home/ysa/Desktop/quiz-express-auth/views/refs/index.html",
+		"/home/ysa/Desktop/quiz-express-auth/public/css/theme.css",
+		"/home/ysa/Desktop/quiz-express-auth/views/refs/game.html",
+		"/home/ysa/Desktop/quiz-express-auth/views/layout.pug",
+		"/home/ysa/Desktop/quiz-express-auth/views/registered.pug",
+		"/home/ysa/Desktop/quiz-express-auth/config/database.js",
+		"/home/ysa/Desktop/Ressources/Others/Bootstrap Themes/bootstrap-3.3.7/docs/examples/theme/index.html",
+		"/home/ysa/Desktop/quiz-express-auth/views/refs/register.html",
+		"/home/ysa/Desktop/quiz-express-auth/config/passport.js",
+		"/home/ysa/Desktop/quiz-express-auth/package.json",
+		"/home/ysa/Desktop/quiz-express-auth/config/auth.js",
+		"/home/ysa/Desktop/quiz-express-auth/views/home.pug",
+		"/home/ysa/Desktop/quiz-express-auth/models/routes.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_intitules/exos/views/page7.pug",
+		"/home/ysa/Documents/dev/quiz-express/public/css/theme.css",
+		"/home/ysa/Documents/dev/quiz-express/views/refs/register.html",
+		"/home/ysa/Documents/dev/quiz-express/index.html",
+		"/home/ysa/Documents/dev/quiz-express/package.json",
+		"/home/ysa/Documents/dev/quiz-express/db.js",
+		"/home/ysa/Documents/dev/quiz-express/css/theme.css",
+		"/home/ysa/Desktop/Ressources/Others/Bootstrap Themes/bootstrap-3.3.7/docs/examples/theme/theme.css",
+		"/home/ysa/Documents/dev/quiz-express/.gitignore",
+		"/home/ysa/Documents/dev/express-quiz/package.json",
+		"/home/ysa/Documents/dev/express-quiz/app.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/package.json",
+		"/home/ysa/Documents/dev/test-meteor/chat-0.3/chat/package.json",
+		"/home/ysa/Documents/dev/win-fast-or-lose/imports/startup/accounts-config.js",
+		"/home/ysa/Documents/dev/win-fast-or-lose/imports/api/users.js",
+		"/home/ysa/Documents/dev/win-fast-or-lose/client/main.css",
+		"/home/ysa/Desktop/Ressources/Others/Bootstrap Themes/bootstrap-3.3.7/docs/examples/navbar/index.html",
+		"/home/ysa/Documents/dev/test/client/main.html",
+		"/home/ysa/Documents/dev/win-fast-or-lose/.meteor/local/dev_bundle/lib/node_modules/node-inspector/front-end/toolbox_bootstrap/Toolbox.js",
+		"/home/ysa/Documents/dev/win-fast-or-lose/.meteor/local/build/programs/server/packages/blaze.js.map",
+		"/home/ysa/.config/sublime-text-3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/home/ysa/Documents/dev/win-fast-or-lose/package.json",
+		"/home/ysa/Documents/dev/win-fast-or-lose/client/main.html",
+		"/home/ysa/Documents/dev/quiz-test/css/styles.css",
+		"/home/ysa/Documents/dev/quiz-test/client/game.html",
+		"/home/ysa/Documents/dev/quiz-test/index.html",
+		"/home/ysa/Documents/dev/test-meteor/todos/imports/startup/accounts-config.js",
+		"/home/ysa/Documents/dev/test-meteor/todos/client/main.css",
+		"/home/ysa/Documents/dev/quiz/css/styles.css",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/both.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/chat-meteor/client/main.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/chat-meteor/client/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/chat-meteor/server/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/server/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/client/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/client/main.html",
+		"/home/ysa/Documents/dev/test-meteor/socially/main.js",
+		"/home/ysa/Documents/dev/test-meteor/socially/client/main.html",
+		"/home/ysa/Documents/dev/test-meteor/socially/client/partiesList.html",
+		"/home/ysa/Documents/dev/test-meteor/socially/server/main.js",
+		"/home/ysa/Documents/dev/test-meteor/socially/client/main.js",
+		"/home/ysa/Documents/dev/test-meteor/socially/client/main.css",
+		"/home/ysa/Documents/dev/test-meteor/socially/package.json",
+		"/home/ysa/Documents/dev/test-meteor/socially/client/index.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/client/main.css",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/super-projet/package.json",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/meteor-ifocop/server/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/meteor-ifocop/client/main.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/meteor-ifocop/client/main.css",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/meteor-ifocop/package.json",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/meteor/meteor-ifocop/client/main.html",
+		"/home/ysa/Documents/dev/test-meteor/socially/.gitignore",
+		"/home/ysa/Documents/dev/test-meteor/simple-todos/imports/api/tasks.js",
+		"/home/ysa/Documents/dev/test-meteor/simple-todos/client/main.css",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/exercice2.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/formulaire.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/03_Socket.io/exercice0/websocket-client.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/03_Socket.io/exercice0/websocket-server.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/03_Socket.io/carre.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/03_Socket.io/exercice2.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/03_Socket.io/exercice1.js",
+		"/home/ysa/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/ysa/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/02_Websocket/exercice2.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/02_Websocket/exercice0/websocket-client.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/02_Websocket/exercice0/websocket-server.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/02_Websocket/chat1.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/02_Websocket/exercice1.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/01_Basics/exercice1.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/01_Basics/exercice0/websocket-client.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/replay/01_Basics/exercice0/websocket-server.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/exercice4.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/form.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/exercice5.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_13.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_14.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_15.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/nodeJS/exercices/02_serveurs/exercice10.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/nodeJS/exercices/02_serveurs/exercice9.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/mongoDB/Exercice8_corrige.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/mongoDB/Exercice13.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_12.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/exercice3.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/chat.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/package.json",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/exercice0/websocket-server.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/exercice0/websocket-client.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/02-Websocket/exercice1.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/01-basics/exercice0/websocket-client.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/01-basics/exercice1.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/websocket/01-basics/exercice0/websocket-server.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_08.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/public/js/script4.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_07.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/views/accueil1.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/exercice_09.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/expressJS/exercices_vierges_replay/folder_exos/views/services1.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/db.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/public/js/script2.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/page2.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/page1.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/public/js/script.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/form.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/exercice1.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/exercice2.js",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/accueil.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/gares-depart.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/accueil.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/gare-depart.pug",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/page2.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/views/page1.html",
+		"/home/ysa/Desktop/Ifocop_Sync_Dropbox/ajax/page2.pug"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"",
+			"/home/ysa/Documents/dev/express-quiz",
+			"",
+			"/home/ysa/Documents/dev/win-fast-or-lose",
+			"",
+			"server/",
+			"",
+			"legacy/",
+			"",
+			"legacy/",
+			"server/",
+			"",
+			"config/",
+			"",
+			"legacy/",
+			"",
+			"e2e/",
+			"config/",
+			"",
+			"legacy/",
+			"",
+			"legacy/",
+			"",
+			"legacy/",
+			"server/",
+			"",
+			".",
+			"",
+			"e2e/",
+			"e2e",
+			"",
+			"e2e/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"client/",
+			"",
+			"test/",
+			"test/server/",
+			"test/",
+			"",
+			"client/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"read-only/",
+			"readonly/",
+			"readonly",
+			"",
+			"e2e/",
+			"e2e",
+			"",
+			"e2e/",
+			"",
+			"/Users/franck/Documents/freelance/lemonde/cms/migrate-scripts",
+			"",
+			"test/",
+			"",
+			"client/",
+			"",
+			"server/",
+			"server",
+			"",
+			"e2e/",
+			"",
+			"server/",
+			"",
+			"server/",
+			"",
+			"e2e/",
+			"",
+			"e2e/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"cms/client/",
+			"cms/server/",
+			"cms/client/",
+			"client/",
+			"",
+			"test/",
+			"",
+			"lmm/",
+			"client/",
+			"client",
+			"",
+			"e2e/",
+			"",
+			"test/",
+			"",
+			"lmm/",
+			"",
+			"server/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"test/",
+			"",
+			"database/",
+			"",
+			"test/",
+			"",
+			"server/",
+			"",
+			"client/",
+			"server/",
+			"",
+			"server/",
+			"",
+			"client/",
+			"client",
+			"server/",
+			"",
+			"server/",
+			"",
+			"services/",
+			"",
+			"/Users/franck/Documents/freelance/lemonde/cms/migrate-scripts"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"number",
+			"listen",
+			"socket",
+			"listen",
+			"db",
+			"listen",
+			"favicon",
+			"registered",
+			"profile",
+			"users",
+			"mongoose.connection",
+			"app, passport",
+			"app. passport",
+			"listen",
+			"app.use(passpo",
+			"express-session",
+			"cookieParser",
+			"passport-local",
+			"saveUninitialized",
+			"session",
+			"signupMessage",
+			"passport",
+			"routes",
+			"morgan",
+			"navbars",
+			"fonts",
+			"jquery",
+			"fancy",
+			"jQuery",
+			"app_api",
+			"app_client",
+			"angular",
+			"jquery",
+			"fancybox",
+			"jquery",
+			"fancybox",
+			"app_api",
+			"users",
+			"onCreated",
+			"bootstrap",
+			"doc.min",
+			"btn",
+			"bootstrap",
+			"body",
+			"html",
+			"body",
+			"container",
+			"login",
+			"line-th",
+			"ie10-viewport-bug-workaround.js",
+			"main.html",
+			"Meteor.Call",
+			"carre",
+			"console",
+			"carre-couleur",
+			"cheschire",
+			"diwjs",
+			"find().toArray(",
+			"event",
+			"diwjs",
+			".js",
+			"server",
+			"arrondissement",
+			"app",
+			"cookies",
+			"blog",
+			"collection",
+			"showsList",
+			"ng",
+			"gestionnaireDeMessage",
+			"insert",
+			"<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"name\" content=\"content\" charset=\"utf-8\">\n    <title>Seriesly addicted</title>\n</head>\n<body>\n    <h1>Seriesly addicted</h1>\n    <h2>The one spot for all tv series</h2>\n    <div>\n        <form action=\"\" method=\"get\" accept-charset=\"utf-8\">\n            <input type=\"search\" name=\"search\" placeholder=\"Filter here\">\n        </form>\n    </div>\n\n    <div>\n        <table>\n            <tr>\n                <th>All Shows</th>\n            </tr>\n            <tr>\n                <th>Show Origin</th>\n                <th>Show Name</th>\n                <th>Show Type</th>\n                <th>Show Next Airing Date</th>\n                <th>Show Premiered</th>\n                <th>Show Status</th>\n            </tr>\n        </table>\n    </div>\n\n    <h3>Les services</h3>\n    <div ng-controller=\"monControleur1 as monCtrl1\">\n      <h4>Formulaire de sauvegarde de commentaires</h4>\n      <form name=\"monFormulaire\" ng-submit=\"monCtrl1.ajouterMessage()\">\n        <p>Titre : <input type=\"text\" name=\"champ_titre\" ng-model=\"monCtrl1.message.titre\" /></p>\n        <p>Corps : <textarea name=\"champ_corps\" ng-model=\"monCtrl1.message.corps\" ></textarea></p>\n        <input type=\"submit\" value=\"Envoyer\"/>\n      </form>\n    </div>\n    <div ng-controller=\"monControleur2 as monCtrl2\">\n      <h4>Les Derniers Commentaires</h4>\n      <div ng-repeat=\"message in monCtrl2.listeDeMessages\">\n        <h5>{{ message.titre }}</h5>\n        <p>{{ message.corps }}</p>\n      </div>\n    </div>\n\n    <script type=\"text/javascript\" src=\"angular.min.js\"></script>\n    <script type=\"text/javascript\" src=\"services.js\"></script>\n    <script type=\"text/javascript\" src=\"controllers.js\"></script>\n    <script type=\"text/javascript\" src=\"app.js\"></script>\n</body>\n</html>",
+			"monControleur1', 'monControleur2'",
+			"data",
+			"sed",
+			"urlDeImage",
+			"exercice7",
+			"throw er",
+			"er",
+			"request",
+			"gravity",
+			"container",
+			"restaurant-name",
+			"jquery",
+			"googleapis",
+			"animation",
+			"introGameText",
+			"intégration",
+			"boky.score ===",
+			"settime",
+			"congratulations",
+			"congratulation",
+			"stage",
+			"setTi",
+			"setTimeout",
+			"loopVilla",
+			"loopBoky",
+			"you lost",
+			"unit",
+			"mute",
+			"lost",
+			"gameSounds",
+			"gameSound",
+			"gameSounds",
+			"over",
+			"gameSounds",
+			"endGame",
+			"endGAme",
+			"end",
+			"gameSounds",
+			"styley",
+			"play",
+			"gameSounds",
+			"stopTheme",
+			"gameTheme",
+			"gameSounds",
+			"playTheme",
+			"playing",
+			"toggle",
+			"avatarHit",
+			"parcours",
+			"cv",
+			"boky.life",
+			"loopBoky",
+			"step",
+			"loadBoky",
+			"activateCv",
+			"btn-default"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"server",
+			"client",
+			"import { Meteor } from 'meteor/meteor';\nimport { Template } from 'meteor/templating';\nimport { Accounts } from 'meteor/accounts-base';\n\nMeteor.subscribe('getMessages');\n\nTemplate.inscription.events({\n  'submit form':function(event){\n    event.preventDefault();\n    Accounts.createUser({\n      username: $('input[name=\"username\"]').val(),\n      email: $('input[name=\"email\"]').val(),\n      password: $('input[name=\"password\"]').val(),\n      profile: {\n        age: $('input[name=\"age\"]').val()\n      }\n    }, function(error){\n      if (error) {\n        console.log('Impossible de créer le compte utilisateur...');\n      } else {\n        console.log('Compte utilisateur créé !');\n      }\n    });\n  }\n});\n\nTemplate.connexion.events({\n  'submit form': function(event) {\n    event.preventDefault();\n    Meteor.loginWithPassword({\n      email: $('input[name=\"email\"]').val()\n    }, $('input[name=\"password\"]').val(), function(error){\n      if (error) {\n        console.log('Connexion échouée...');\n      } else {\n        console.log('Connexion réussie !');\n      }\n    });\n  }\n});\n\nTemplate.deconnexion.events({\n  'click a': function(event){\n    event.preventDefault();\n    Meteor.logout(function(error){\n      if (error) {\n        console.log('Impossible de vous déconnecter');\n      } else {\n        console.log('Vous êtes déconnecté');\n      }\n    });\n  }\n});\n\nTemplate.salonFormulaire.events({\n  'submit form':function(event){\n    event.preventDefault();\n    var message =  {\n      body:$('textarea[name=\"body\"]').val()\n    };\n    Meteor.call('insertionMessage', message, function(error, result){\n      if (error) {\n        console.log('Erreur de connexion au réseau');\n      } else {\n        console.log(result);\n      };\n    })\n  }\n});\n\nTemplate.salonMessages.helpers({\n  messages: function(){\n    return Messages.find({});\n  },\n  affiche: function(){\n    // affiche est utilisé dans le template entre {{#with}}, donc this ici est le message considéré.\n    if(this.user._id === Meteor.user()._id) {\n      return true;\n    } else {\n      return false;\n    };\n  }\n});\n\nTemplate.salonMessages.events({\n  'click a': function(event){\n    event.preventDefault();\n    Meteor.call('suppressionMessage', this , function(error, result){\n      if (error) {\n        console.log('Erreur de connexion au réseau');\n      } else {\n        console.log(result);\n      };\n    });\n  }\n});\n\nTemplate.registerHelper('format', function(timestamp){\n  return (new Date(timestamp)).toLocaleString();\n})\n\n",
+			"<!DOCTYPE html>\n<html>\n<head>\n    <meta name=\"name\" content=\"content\" charset=\"utf-8\">\n    <title>Seriesly addicted</title>\n</head>\n<body>\n    <h1>Seriesly addicted</h1>\n    <h2>The one spot for all tv series</h2>\n    <div>\n        <form action=\"\" method=\"get\" accept-charset=\"utf-8\">\n            <input type=\"search\" name=\"search\" placeholder=\"Filter here\">\n        </form>\n    </div>\n\n    <div>\n        <table>\n            <tr>\n                <th>All Shows</th>\n            </tr>\n            <tr>\n                <th>Show Origin</th>\n                <th>Show Name</th>\n                <th>Show Type</th>\n                <th>Show Next Airing Date</th>\n                <th>Show Premiered</th>\n                <th>Show Status</th>\n            </tr>\n        </table>\n    </div>\n\n    <h3>Les services</h3>\n    <div ng-controller=\"monControleur1 as monCtrl1\">\n      <h4>Formulaire de sauvegarde de commentaires</h4>\n      <form name=\"monFormulaire\" ng-submit=\"monCtrl1.ajouterMessage()\">\n        <p>Titre : <input type=\"text\" name=\"champ_titre\" ng-model=\"monCtrl1.message.titre\" /></p>\n        <p>Corps : <textarea name=\"champ_corps\" ng-model=\"monCtrl1.message.corps\" ></textarea></p>\n        <input type=\"submit\" value=\"Envoyer\"/>\n      </form>\n    </div>\n    <div ng-controller=\"monControleur2 as monCtrl2\">\n      <h4>Les Derniers Commentaires</h4>\n      <div ng-repeat=\"message in monCtrl2.listeDeMessages\">\n        <h5>{{ message.titre }}</h5>\n        <p>{{ message.corps }}</p>\n      </div>\n    </div>\n\n    <script type=\"text/javascript\" src=\"angular.min.js\"></script>\n    <script type=\"text/javascript\" src=\"services.js\"></script>\n    <script type=\"text/javascript\" src=\"controllers.js\"></script>\n    <script type=\"text/javascript\" src=\"app.js\"></script>\n</body>\n</html>",
+			">\n",
+			",\n",
+			"origin",
+			"          <",
+			"lmm-internal://",
+			"));\n",
+			"database",
+			"http://httpd.prive.www.lemonde-dev.fr/lmm/publi/protege",
+			"http://httpd.prive.www.lemonde-dev.fr/lmm/publi/libre",
+			"http://httpd.prive.www.lemonde-dev.fr/lmm/publi/protege",
+			"http://httpd.prive.www.lemonde-dev.fr/lmm/publi/libre",
+			"http://httpd.prive.www.lemonde-dev.fr/lmm/publi/protege",
+			"',",
+			"'",
+			" \t\t{",
+			"toasty",
+			"Danse<",
+			"Dance",
+			"Relaxation",
+			"Cardio",
+			"Musculation"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 54.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GitSavvy":
+	{
+		"height": 279.0
+	},
+	"output.exec":
+	{
+		"height": 138.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 116.0
+	},
+	"output.vcs":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "",
+	"project": "quiz-express-auth.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"public/js/app.js"
+			],
+			[
+				"db",
+				"db.js"
+			],
+			[
+				"bootstrap",
+				".meteor/local/dev_bundle/lib/node_modules/node-inspector/front-end/toolbox_bootstrap/Toolbox.js"
+			],
+			[
+				"services",
+				"app_copy/js/services.js"
+			],
+			[
+				"controll",
+				"app/controllers.js"
+			],
+			[
+				"cont",
+				"seriesly/js/controllers.js"
+			],
+			[
+				"servi",
+				"app/services.js"
+			],
+			[
+				"contro",
+				"seriesly/js/controllers.js"
+			],
+			[
+				"ser",
+				"seriesly/js/services.js"
+			],
+			[
+				"mai",
+				"spawning-test/main.js"
+			],
+			[
+				"preprod",
+				"config/config.preprod.js"
+			],
+			[
+				"rver/exports/tasks/legacy/articles.js",
+				"server/exports/tasks/legacy/articles.js"
+			],
+			[
+				"articlemediacollection",
+				"server/services/database/schemas/article-media-collections.js"
+			],
+			[
+				"article-media-coll",
+				"server/services/database/models/article-media-collection.js"
+			],
+			[
+				"config",
+				"config/config.js"
+			],
+			[
+				"layout",
+				"server/exports/formatters/legacy/layout.js"
+			],
+			[
+				"cms-ap",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"r/exports/formatters/legacy/portfolio.js",
+				"server/exports/formatters/legacy/portfolio.js"
+			],
+			[
+				"erver/exports/transports/cms-medias.js",
+				"server/exports/transports/cms-medias.js"
+			],
+			[
+				"config/config.js",
+				"config/config.js"
+			],
+			[
+				"cms-medi",
+				"server/exports/transports/cms-medias.js"
+			],
+			[
+				"cms-api",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"services/database/legac",
+				"server/services/database/models/legacy-item.js"
+			],
+			[
+				"exporttask",
+				"server/api/export-tasks.js"
+			],
+			[
+				"masks",
+				"server/exports/providers/legacy/masks.js"
+			],
+			[
+				"test/server/unit/exports/formatters/legacy/portfolio.js",
+				"test/server/unit/exports/formatters/legacy/portfolio.js"
+			],
+			[
+				"server/exports/formatters/legacy/portfolio.js",
+				"server/exports/formatters/legacy/portfolio.js"
+			],
+			[
+				"rver/exports/providers/legacy/masks.js",
+				"server/exports/providers/legacy/masks.js"
+			],
+			[
+				"ver/exports/providers/legacy/masks.js",
+				"test/server/unit/exports/providers/legacy/masks.js"
+			],
+			[
+				"fixturesillus",
+				"test/server/fixtures/exports/legacy/illustration.js"
+			],
+			[
+				"fixtuport",
+				"test/server/fixtures/exports/legacy/portfolio.js"
+			],
+			[
+				"iders/legacy/illustration",
+				"server/exports/providers/legacy/illustrations.js"
+			],
+			[
+				"roviders/legacy/element",
+				"server/exports/providers/legacy/element.js"
+			],
+			[
+				"testlegacyillus",
+				"test/server/unit/exports/providers/legacy/illustrations.js"
+			],
+			[
+				"er/exports/providers/legacy/illustratio",
+				"server/exports/providers/legacy/illustrations.js"
+			],
+			[
+				"orts/formatters/legacy/portfolio",
+				"server/exports/formatters/legacy/portfolio.js"
+			],
+			[
+				"r/exports/providers/legacy/illustration",
+				"server/exports/providers/legacy/illustrations.js"
+			],
+			[
+				"orts/formatters/legacy/portfolio.",
+				"server/exports/formatters/legacy/portfolio.js"
+			],
+			[
+				"er/exports/providers/legacy/masks.js",
+				"server/exports/providers/legacy/masks.js"
+			],
+			[
+				"ver/exports/transports/cms-medias.js",
+				"server/exports/transports/cms-medias.js"
+			],
+			[
+				"egacy/image-article-media",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"test/legacy/illus",
+				"test/server/fixtures/exports/legacy/illustration.js"
+			],
+			[
+				"transports/cms-api",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"rmatters/legacy/image-article-medias",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"erver/routes/api/articles",
+				"server/routes/api/articles.js"
+			],
+			[
+				"tters/legacy/article-media-colle",
+				"server/exports/formatters/legacy/article-media-collection.js"
+			],
+			[
+				"browser",
+				"test/e2e/config/browserstack.js"
+			],
+			[
+				"roviders/legacy/illustrations",
+				"server/exports/providers/legacy/illustrations.js"
+			],
+			[
+				"formatterlegacyimage",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"ters/legacy/article-media-collecti",
+				"server/exports/formatters/legacy/article-media-collection.js"
+			],
+			[
+				"ripts/ci-node/desktop/start-selenium-server.sh",
+				"scripts/ci-node/desktop/start-selenium-server.sh"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"cms-a",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"database/media",
+				"server/services/database/models/image.js"
+			],
+			[
+				"database/article-me",
+				"server/services/database/models/article-media.js"
+			],
+			[
+				"databasearticlemedia",
+				"server/services/database/schemas/article-media-collections.js"
+			],
+			[
+				"ormatters/legacy/article-media-collectio",
+				"server/exports/formatters/legacy/article-media-collection.js"
+			],
+			[
+				"roviders/legacy/masks",
+				"server/exports/providers/legacy/masks.js"
+			],
+			[
+				"ormatters/legacy/artic",
+				"server/exports/formatters/legacy/article.js"
+			],
+			[
+				"legacy/snippe",
+				"server/exports/formatters/legacy/snippet-article-medias.js"
+			],
+			[
+				"article-media",
+				"server/api/article-media-collections.js"
+			],
+			[
+				"ormatters/legacy/image-article-medias",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"databaselayouts",
+				"server/services/database/schemas/layouts.js"
+			],
+			[
+				"legacy/layout",
+				"server/exports/formatters/legacy/layout.js"
+			],
+			[
+				"legacy/edito",
+				"server/exports/formatters/legacy/editorial-type.js"
+			],
+			[
+				"server/api/article-med",
+				"server/api/article-medias.js"
+			],
+			[
+				"server/api/article-media",
+				"server/api/article-media-collections.js"
+			],
+			[
+				"server/api/article",
+				"server/api/articles.js"
+			],
+			[
+				"formatterlegacymedia",
+				"server/exports/formatters/legacy/snippet-article-medias.js"
+			],
+			[
+				"transports/cms-ap",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"transpo",
+				"client/modules/services/article/transport.js"
+			],
+			[
+				"ormatters/legacy/layout",
+				"server/exports/formatters/legacy/layout.js"
+			],
+			[
+				"server/services/database/article",
+				"server/services/database/schemas/articles.js"
+			],
+			[
+				"formatterlegacy",
+				"server/exports/formatters/legacy/article.js"
+			],
+			[
+				"element",
+				"server/exports/providers/legacy/element.js"
+			],
+			[
+				"server/api/images",
+				"server/api/images.js"
+			],
+			[
+				"cms-media",
+				"server/exports/transports/cms-medias.js"
+			],
+			[
+				"/transports/cms-api",
+				"server/exports/transports/cms-api.js"
+			],
+			[
+				"matters/legacy/image-article-medias",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"roviders/legacy/elemen",
+				"server/exports/providers/legacy/element.js"
+			],
+			[
+				"config.",
+				"config/config.js"
+			],
+			[
+				"tasks",
+				"server/api/tasks.js"
+			],
+			[
+				"test/server/unit/exports/tasks/legacy/articles.js",
+				"test/server/unit/exports/tasks/legacy/articles.js"
+			],
+			[
+				"formatters/legacy/image-article-media",
+				"server/exports/formatters/legacy/image-article-medias.js"
+			],
+			[
+				"eleme",
+				"test/server/fixtures/exports/legacy/element.js"
+			],
+			[
+				"header-s",
+				"client/modules/directives/article/exports/sept/header-section.html"
+			],
+			[
+				"header",
+				"client/modules/directives/article/exports/sept/header-section.js"
+			],
+			[
+				"apiconfig.js",
+				"server/api/configs.js"
+			],
+			[
+				"config.js",
+				"config/config.js"
+			],
+			[
+				"database",
+				"server/services/database/pg-database.js"
+			],
+			[
+				"producti",
+				"config/config.production.js"
+			],
+			[
+				"test/server/fixtures/exports/legacy/elemen",
+				"test/server/fixtures/exports/legacy/element.js"
+			],
+			[
+				"articlemedia",
+				"server/api/article-medias.js"
+			],
+			[
+				"config.pro",
+				"config/config.production.js"
+			],
+			[
+				"header-sec",
+				"client/modules/directives/article/exports/sept/header-section.js"
+			],
+			[
+				"test/client/unit/modules/directives/article/exports/sept/header-section.js",
+				"test/client/unit/modules/directives/article/exports/sept/header-section.js"
+			],
+			[
+				"brand",
+				"test/client/unit/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"modules/directives/article/exports/sept/header-section.js",
+				"client/modules/directives/article/exports/sept/header-section.js"
+			],
+			[
+				"ent/modules/directives/article/metas/digital/brand-campaign.js",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"testheader-se",
+				"test/client/unit/modules/directives/article/exports/sept/header-section.js"
+			],
+			[
+				"brand-c",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"nt/modules/routes/articles/metas/digital.html",
+				"client/modules/routes/articles/metas/digital.html"
+			],
+			[
+				"digital.js",
+				"client/modules/routes/articles/metas/digital.js"
+			],
+			[
+				"schemauser",
+				"server/services/database/schemas/roles-users.js"
+			],
+			[
+				"role-per",
+				"server/services/database/schemas/roles-permissions.js"
+			],
+			[
+				"permissi",
+				"server/services/database/schemas/permissions.js"
+			],
+			[
+				"digital",
+				"client/modules/routes/articles/metas/digital.html"
+			],
+			[
+				"roles",
+				"server/services/database/schemas/roles.js"
+			],
+			[
+				"permissions",
+				"server/services/database/schemas/permissions.js"
+			],
+			[
+				"server/api/permi",
+				"server/api/permissions.js"
+			],
+			[
+				"articlemodel",
+				"client/modules/services/article/model.js"
+			],
+			[
+				"brand-ca",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"digital.html",
+				"client/modules/routes/articles/metas/digital.html"
+			],
+			[
+				"digital.",
+				"client/modules/routes/articles/metas/digital.js"
+			],
+			[
+				"br",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"cmsservicetagresour",
+				"client/modules/services/tag/resources.js"
+			],
+			[
+				"odules/directives/staging-area/editor/article/article",
+				"client/modules/directives/staging-area/editor/article/article.js"
+			],
+			[
+				"stagingareadedit",
+				"client/modules/directives/staging-area/editor/editor.js"
+			],
+			[
+				"staging",
+				"server/api/staging-areas.js"
+			],
+			[
+				"bra",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"brand-",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"testdigital",
+				"test/client/unit/modules/routes/articles/metas/digital.js"
+			],
+			[
+				"dighi",
+				"client/modules/routes/articles/metas/digital.html"
+			],
+			[
+				"digital.htm",
+				"client/modules/routes/articles/metas/digital.html"
+			],
+			[
+				"ient/modules/directives/article/metas/digital/brand-campaign.js",
+				"client/modules/directives/article/metas/digital/brand-campaign.js"
+			],
+			[
+				"sources.json",
+				"client/config/article/sources.json"
+			],
+			[
+				"sources",
+				"config/sources.js"
+			],
+			[
+				"client/modules/directives/article/metas/digital/tags.js",
+				"test/client/unit/modules/directives/article/metas/digital/tags.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/launchme/launchme.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 175.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
