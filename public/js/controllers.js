@@ -13,13 +13,17 @@
 
 angular.module('quizApp.controllers', ['quizApp.services'])
 	.controller('AppCtrl', function ($scope, socket, userFactory) {
+		$scope.connectedUsers = [];
+
 		socket.on('status', function (data) {
 			console.log('status received', data)
 			$scope.status = data.description;
+			$scope.connectedUsers = data.users;
+			console.log('users connected', $scope.connectedUsers.length);
 		});
-		socket.on('newclientconnect', function (data) {
+		socket.on('newuserconnect', function (data) {
 			console.log('new client', data)
-			$scope.newclientconnect = data.description;
+			$scope.newuserconnect = data.description;
 		});
 
 		userFactory.getMe()

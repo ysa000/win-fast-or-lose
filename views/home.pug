@@ -2,14 +2,13 @@ extends layout.pug
 
 block gameDesc
 	if (user)
-		.container
-			div(ng-controller='AppCtrl')
-				p {{ newclientconnect }}
-				p You are currently logged in as #{user.username}
+		.container(ng-controller='AppCtrl')
+			div
+				p {{ newuserconnect }}
 				p status: {{ status }}
 				p me: {{ me }}
 			a(href='/game')
-				button.btn.btn-sm.btn-primary(type='button') Play
+				button.btn.btn-sm.btn-primary(type='button' ng-show='connectedUsers.length > 1') Play
 			a(href='/logout')
 				button.btn.btn-sm.btn-danger(type='button') Log out
 	.jumbotron

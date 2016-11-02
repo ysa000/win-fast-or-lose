@@ -157,5 +157,8 @@ io.on('connection', function(socket) {
 });
 
 function socketStatus() {
-	io.sockets.emit('status', {description : 'There are ' + connectedUsers.length + ' users connected'});
+	io.sockets.emit('status', {
+		description : 'There are ' + connectedUsers.length + ' users connected',
+		users: _.map(connectedUsers, 'username')
+	});
 }
