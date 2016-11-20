@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ysa",
@@ -20,12 +20,14 @@
     "lodash": "^4.16.6",
     "mongodb": "^2.2.11",
     "mongoose": "^4.6.4",
-    "nodemon": "^1.11.0",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "passport-local-mongoose": "^4.0.0",
     "pug": "^2.0.0-beta6",
     "socket.io": "^1.5.1"
+  },
+  "engines": {
+    "node": "4.3.2"
   },
   "devDependencies": {},
   "description": ""
