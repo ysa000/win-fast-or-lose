@@ -12,7 +12,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var configDB = require('./config/database');
 var _ = require('lodash');
-
+var db;
 
 // Set up des views
 app.set('views', './views');
@@ -33,6 +33,7 @@ app.use(require('express-session') ({
 	saveUninitialized: false
 	// cookie: { secure: true }
 }));
+
 // ===== Nécessaires au fontionnement du package Passport =====
 app.use(passport.initialize());
 app.use(flash());
@@ -56,7 +57,8 @@ function startServer() {
 	});
 }
 // On se connecte à la DB
-mongoose.connection.on('connected', function() { //
+mongoose.connection.on('connected', function() {
+	db = mongoose.connection;
 	setupDatabase(function (err) { // Exécution de la fonction setupDatabase avec pour paramètre une fonction anonyme
 		if (err) { // S'il y a une erreur, on sort
 			console.log('Erreur lors du setupDatabase: ', err);
@@ -75,46 +77,70 @@ mongoose.connection.on('disconnected', function() {
 });
 
 function setupDatabase(callback) { // Déclaration d'une fonction avec pour paramètre 'callback' / 'callback' est ici la fonction anonyme
-	var db = mongoose.connection;
 	var quizCollection = db.collection('questions');
 	// Find questions
 	quizCollection.find({}).toArray(function(err, questions) {
 		if (err) {
-			callback(err); // Exécution de la callback lorsqu'il y a une erreur
+			return callback(err); // Exécution de la callback lorsqu'il y a une erreur
 		}
+		// return === else
 		if(questions && questions.length) {
 			// There are already questions in there
-			console.log('questions are already in DB: ', questions)
-			callback(); // Exécutation de la callback sans erreur
+			// console.log('questions are already in DB: ', questions)
+			return callback(); // Exécution de la callback sans erreur
 		} else {
-			// We need to add them
 			var questionsArray = [
-				{
-					text: 'Who am I?',
-					answer: 'Rocky'
-				}, {
-					text: 'Which city do you live in?',
-					answer: 'Paris'
-				}, {
-					text: 'What\'s your favorite activity?',
-					answer: 'Sleeping'
+				{	text: 'Who am I?',
+					img: '/img/Cheschire_Cat.png',
+					possibleAnswer: {
+						p1: 'Rocky',
+						p2: 'Cheschire Cat',
+						p3: 'Grumpy Cat',
+						p4: 'Garfield'
+					},
+					correctAnswer: 'Cheschire Cat'
+				},
+				{	text: 'Who am I?',
+					img: '/img/walter-white.png',
+					possibleAnswer: {
+						p1: 'Darth Vador',
+						p2: 'Negan',
+						p3: 'Heisenberg',
+						p4: 'Saul Goodman'
+					},
+					correctAnswer: 'Heisenberg'
+				},
+				{	text: 'Who am I?',
+					img: '/img/oph.jpg',
+					possibleAnswer: {
+						p1: 'Sydney Opera House',
+						p2: 'Orient Pearl Tower',
+						p3: 'Taj Mahal',
+						p4: 'Eiffel Tower'
+					},
+					correctAnswer: 'Sydney Opera House'
 				}
+
 			];
 
 			quizCollection.insertMany(questionsArray, function(err, result) {
 				if (err) {
-					callback(err);
+					return callback(err);
 				} else {
 					console.log('Inserted ' + questionsArray.length + ' questions into the collection');
-					callback();
+					return callback();
 				}
 			});
 		}
 	});
 }
 
+// SOCKET IO
+// ======================================================================
+
 // utilisateurs  identifiés connectés en socket
 var connectedUsers = [];
+var players = [];
 
 io.on('connection', function(socket) {
 	console.log('new socket connected')
@@ -122,43 +148,116 @@ io.on('connection', function(socket) {
 	socket.on('disconnect', function() {
 		// on retire l'utilisateur du tableau (s'il était connecté)
 		connectedUsers = _.reject(connectedUsers, socket);
-
-		// Nb de users connectés après une déco
+		// Nb de users connectés après qu'il y ait eu une déconnexion
 		socketStatus();
-
-	});
+	}); // end socket.on('disconnect')
 
 	socket.on('userAuth', function(user) {
-
 		socket.username = user.username;
-
+		socket.score = 0;
 		var userSocketFound = _.find(connectedUsers, { username: user.username });
-
-		// on doit mettre à jour / changer la socket de cet utilisateur, car on autorise qu'une seule connexon socket par utilisteur.
+		// on doit mettre à jour / changer la socket de cet utilisateur, car on autorise qu'une seule connexion socket par utilisteur.
 		if (userSocketFound !== undefined) {
 			connectedUsers = _.reject(connectedUsers, userSocketFound);
-
 			// On force le disconnect sans attendre le timeout
 			userSocketFound.disconnect();
 		}
-
 		// Dans tous les cas, on ajoute la bonne (nouvelle) socket de l'utilisateur au tableau
 		connectedUsers.push(socket);
-
 		console.log('Utilisateur déclaré:', user);
-
-		// Bienvenue au nouveau client connecté
-		socket.emit('newuserconnect', { description: 'You are currently logged in as ' + socket.username + ' !' });
-
-		// Nb de users connectés après une connexion
+		// Msg à l'attention du nouveau user connecté
+		socket.emit('newuserconnect', { description: 'Welcome ' + socket.username.toUpperCase() + '!' });
+		// Nb de users connectés après une nouvelle connexion
 		socketStatus();
+
+	}); // end socket.on('userAuth')
+
+	// Dès qu'il y a au moins 2 joueurs dont le status est set ready à jouer
+	socket.on('ready', function(data) {
+		players.push(socket);
+		if (players.length > 1) {
+			startGame();
+		} else {
+			// Joueur en attente d'un autre joueur
+			socket.emit('waiting', {description: 'Waiting for an other player to play' });
+		}
+	}); // end on socket.on('ready')
+
+	// Lorsqu'un user a soumis une bonne réponse, on ajoute +1 à son score, et on cache la question en cours
+	socket.on('rightAnswer', function() {
+		socket.score += 1;
+		emitToAllPlayers('hideQuestion');
+		keepingScore();
+		// console.log(socket.username, socket.score);
 	})
 
-});
+	// Lorsqu'un user a soumis une mauvaise réponse, on cache la question en cours
+	socket.on('wrongAnswer', function() {
+		emitToAllPlayers('hideQuestion');
+		keepingScore();
+	})
 
+}); // end io.on('connection')
+
+// Nombre de users connectés
 function socketStatus() {
 	io.sockets.emit('status', {
-		description : 'There are ' + connectedUsers.length + ' users connected',
+		description : connectedUsers.length + ' users connected',
 		users: _.map(connectedUsers, 'username')
 	});
+} // end function socketStatus
+
+// Lorsque le jeu commence, on récupère les questions dans la db et on affiche la 1ère question
+function startGame() {
+
+	emitToAllPlayers('gameStarted', true);
+	keepingScore();
+	// recupérer question dans db
+	var quizCollection = db.collection('questions');
+	// // Find questions
+	quizCollection.find({}).toArray(function(err, questions) {
+		if (err) {
+			console.log('Erreur lors de la récupération des questions: ', err);
+			process.exit(1);
+		} else {
+			emitQuestions(questions, 0);
+		}
+	});
+} // End function startGame
+
+// On affiche les questions, l'une après l'autre, en utilisant une fonction récursive (évite de bloquer le thread Node) - permet de faire une boucle sans utiliser de boucle
+function emitQuestions(questions, currentQuestionIndex) {
+	emitToAllPlayers('question', questions[currentQuestionIndex]);
+	setTimeout(function() {
+		currentQuestionIndex++;
+		if (currentQuestionIndex < questions.length) {
+			emitQuestions(questions, currentQuestionIndex);
+		} else {
+			emitToAllPlayers('hideQuestion');
+			console.log('...end game');
+			theWinnerIs();
+			players = [];
+		}
+	}, 4000);
+} // End function emitQuestions
+
+// Définit le gagnant
+function theWinnerIs() {
+	var orderPlayersByScore = _.sortBy(players, 'score').reverse();
+	emitToAllPlayers('gameEnded', {text: orderPlayersByScore[0].username.toUpperCase() + ' won'});
+} // End function theWinnerIs
+
+// Score de chaque joueur durant le jeu
+function keepingScore() {
+	for (var i = 0; i < players.length; i++) {
+		console.log(players[i].username + ' | ' + players[i].score);
+		emitToAllPlayers('usersScore', {name: players[i].username, score: players[i].score})
+	}
+} // End function keepingScore
+
+// Fonction permettant d'afficher la data à tous les users loggés et prêts à jouer
+function emitToAllPlayers(channel, data) {
+	for (var i = 0; i < players.length; i++) {
+		players[i].emit(channel, data);
+	}
 }

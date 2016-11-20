@@ -2,21 +2,57 @@ extends layout.pug
 
 block gameDesc
 	if (user)
-		.container(ng-controller='AppCtrl')
+		.container(ng-if='!gameStarted')
 			div
-				p {{ newuserconnect }}
-				p status: {{ status }}
-				p me: {{ me }}
-			a(href='/game')
-				button.btn.btn-sm.btn-primary(type='button' ng-show='connectedUsers.length > 1') Play
+				h2#welcome-msg {{ newuserconnect }}
+				div.col-md-12
+					table.table.table-striped
+						tr
+							th {{ status }}
+							//- th Last score
+							//- th Last played
+						tr(ng-repeat='connectedUser in connectedUsers')
+							td {{ connectedUser.toUpperCase() }}
+				//- p me: {{ me }}
+			a
+				button.btn.btn-sm.btn-primary(type='button' ng-show='connectedUsers.length > 1 && isReady === false' ng-click='setReady()') Ready
 			a(href='/logout')
 				button.btn.btn-sm.btn-danger(type='button') Log out
-	.jumbotron
-		h1 Be the fastest to win
-		h2 One picture, one question, 4 answers to choose from, and 15 seconds
-		h2 One correct answer, only one player can win
-		p Only one player can submit an answer : the fastest one
-		p The fastest player who has correctly answered the question wins the round
-		p Move on to the next question to get a rematch
-		p The player who has answered the most questions correctly wins the game
-		p Register or sign in to start playing
+	div(ng-if='!gameStarted')
+		.jumbotron(ng-if='!waiting')
+			h1 Be the fastest to win
+			h2 5 seconds, one picture, one question, 4 answers to choose from
+			h2 Only one player can submit an answer : the fastest one
+			p The fastest player who has correctly answered the question wins the round
+			p Move on to the next question to get a rematch
+			p The player who has answered the most questions correctly wins the game
+			p Register or sign in to start playing
+		div(ng-if='waiting' class='hourglass')
+			img(src='/img/hourglass.gif', alt='hourglass')
+			p {{ waiting }}
+	div(ng-if='gameStarted && displayScore')
+		p In game:
+		//- div(ng-repeat='connectedUser in connectedUsers')
+		//- 	p {{ connectedUser.toUpperCase()}}
+		div(ng-repeat='(username, score) in players')
+			p {{ username }} {{ score }}
+
+		.jumbotron(ng-if='question')
+			div.center
+				h3 {{ question.text }}
+				img(src='{{ question.img }}' class='game-img')
+			div#answers-btn1
+				button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p1)') {{ question.possibleAnswer.p1 }}
+				button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p2)') {{ question.possibleAnswer.p2 }}
+			div#answers-btn2
+				button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p3)') {{ question.possibleAnswer.p3 }}
+				button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p4)') {{ question.possibleAnswer.p4 }}
+		.jumbotron(ng-if='!question && !gameEnded')
+			div.center.hourglass
+				h3 {{ result }}
+				img(src='/img/hourglass.gif', alt='hourglass')
+	div(ng-if='gameEnded')
+		.jumbotron
+			div.center
+				h3 {{ message }}
+				img(src='http://i.giphy.com/3o7TKxJRKk8uPOOdgY.gif' class="game-img")

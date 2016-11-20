@@ -21,6 +21,10 @@ module.exports = function(app, passport) {
 		res.render('register', { });
 	});
 
+	app.get('/game', function(req, res) {
+		res.render('game', { });
+	});
+
 	// Page de confirmation d'inscription
 	app.post('/register', function(req, res, next) {
 		User.register(new User({ username: req.body.username }), req.body.password, function(err, user) {
@@ -54,11 +58,6 @@ module.exports = function(app, passport) {
 			});
 		});
 
-	// Page de jeu
-	app.get('/game', function(req, res) {
-		res.render('game');
-	});
-
 	// Déconnexion
 	app.get('/logout', function(req, res, next) {
 		req.logout();
@@ -77,6 +76,16 @@ module.exports = function(app, passport) {
 			res.json(req.user);
 		} else {
 			res.json({ loggedin: false });
+		}
+	});
+
+	// Page récup question
+	app.get('/api/question', function(req, res) {
+		console.log(req, req.question)
+		if (req.isAuthenticated()) {
+			res.json(req.user);
+		} else {
+			res.send('not found');
 		}
 	});
 
