@@ -31,12 +31,14 @@ block gameDesc
 			img(src='/img/hourglass.gif', alt='hourglass')
 			p {{ waiting }}
 	div(ng-if='gameStarted && displayScore')
-		p In game:
-		//- div(ng-repeat='connectedUser in connectedUsers')
-		//- 	p {{ connectedUser.toUpperCase()}}
-		div(ng-repeat='(username, score) in players')
-			p {{ username }} {{ score }}
-
+		div.col-md-12
+			table.table.table-striped
+				tr
+					th In game
+					th Score
+				tr(ng-repeat='(username, score) in players')
+					td {{  username.toUpperCase() }}
+					td {{ score }}
 		.jumbotron(ng-if='question')
 			div.center
 				h3 {{ question.text }}

@@ -202,7 +202,7 @@ io.on('connection', function(socket) {
 // Nombre de users connectés
 function socketStatus() {
 	io.sockets.emit('status', {
-		description : connectedUsers.length + ' users connected',
+		description : connectedUsers.length + ' user(s) connected',
 		users: _.map(connectedUsers, 'username')
 	});
 } // end function socketStatus
