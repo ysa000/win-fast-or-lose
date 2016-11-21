@@ -80,6 +80,7 @@ angular.module('quizApp.controllers', ['quizApp.services'])
 			$scope.gameEnded = isGameEnded;
 			$scope.message = isGameEnded.text;
 			$scope.isReady = false;
+			$scope.winnerGif = 'http://i.giphy.com/3o7TKxJRKk8uPOOdgY.gif';
 		});
 
 		// Permet de récupérer les infos du user qui vient de se logger
