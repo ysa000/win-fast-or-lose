@@ -9,9 +9,6 @@
   "author": "ysa",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.5.8",
-    "angular-route": "^1.5.8",
-    "angular-socket-io": "^0.7.0",
     "body-parser": "^1.15.2",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
