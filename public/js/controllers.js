@@ -31,7 +31,7 @@ angular.module('quizApp.controllers', ['quizApp.services'])
 
 		// Statut du user lorsqu'il charge la page
 		socket.on('status', function (data) {
-			console.log('status received', data);
+			// console.log('status received', data);
 			$scope.status = data.description;
 			$scope.connectedUsers = data.users;
 			$scope.score = data.users.score;
@@ -47,7 +47,7 @@ angular.module('quizApp.controllers', ['quizApp.services'])
 
 		// Statut du user en attente de jeu
 		socket.on('waiting', function(data) {
-			console.log('waiting', data);
+			//console.log('waiting', data);
 			$scope.waiting = data.description;
 		});
 
@@ -66,7 +66,7 @@ angular.module('quizApp.controllers', ['quizApp.services'])
 
 		// Une fois que le jeu a démarré
 		socket.on('gameStarted', function(isGameStarted) {
-			console.log('Game started : ' + isGameStarted);
+			//console.log('Game started : ' + isGameStarted);
 			$scope.gameStarted = isGameStarted;
 		});
 

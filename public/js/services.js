@@ -18,13 +18,3 @@ angular.module('quizApp.services', [])
 		}
 		return currentUser;
 	});
-	// .factory('questionsFactory', function($http) {
-	// 	var currentQuestion = {};
-	// 	currentQuestion.getQuestion = function() {
-	// 		return $http({
-	// 			method: 'GET',
-	// 			url:'/api/question'
-	// 		});
-	// 	}
-	// 	return currentQuestion;
-	// });
