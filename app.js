@@ -84,7 +84,6 @@ function setupDatabase(callback) { // Déclaration d'une fonction avec pour para
 		}
 		// return === else
 		if(questions && questions.length) {
-			// There are already questions in there
 			// console.log('questions are already in DB: ', questions)
 			return callback(); // Exécution de la callback sans erreur
 		} else {
@@ -142,7 +141,7 @@ var connectedUsers = [];
 var players = [];
 
 io.on('connection', function(socket) {
-	console.log('new socket connected')
+	//console.log('new socket connected')
 
 	socket.on('disconnect', function() {
 		// on retire l'utilisateur du tableau (s'il était connecté)
@@ -163,7 +162,7 @@ io.on('connection', function(socket) {
 		}
 		// Dans tous les cas, on ajoute la bonne (nouvelle) socket de l'utilisateur au tableau
 		connectedUsers.push(socket);
-		console.log('Utilisateur déclaré:', user);
+		//console.log('Utilisateur déclaré:', user);
 		// Msg à l'attention du nouveau user connecté
 		socket.emit('newuserconnect', { description: 'Welcome ' + socket.username.toUpperCase() + '!' });
 		// Nb de users connectés après une nouvelle connexion
@@ -233,7 +232,7 @@ function emitQuestions(questions, currentQuestionIndex) {
 			emitQuestions(questions, currentQuestionIndex);
 		} else {
 			emitToAllPlayers('hideQuestion');
-			console.log('...end game');
+			//console.log('...end game');
 			theWinnerIs();
 			players = [];
 		}
@@ -249,7 +248,7 @@ function theWinnerIs() {
 // Score de chaque joueur durant le jeu
 function keepingScore() {
 	for (var i = 0; i < players.length; i++) {
-		console.log(players[i].username + ' | ' + players[i].score);
+		//console.log(players[i].username + ' | ' + players[i].score);
 		emitToAllPlayers('usersScore', {name: players[i].username, score: players[i].score})
 	}
 } // End function keepingScore
