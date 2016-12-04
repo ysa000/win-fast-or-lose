@@ -1,7 +1,0 @@
-extends layout.pug
-
-block waiting
-	div(ng-controller='AppCtrl' class='hourglass')
-		img(src='/img/hourglass.gif', alt='hourglass')
-		p {{ waiting }}
-		p Playing ready status : {{ userReadyStatus }}
