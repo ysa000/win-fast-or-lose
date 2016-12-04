@@ -45,12 +45,12 @@ block gameDesc
 				div.center
 					h3 {{ question.text }}
 					img(ng-src='{{ question.img }}' class='game-img')
-				div#answers-btn1
-					button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p1)') {{ question.possibleAnswer.p1 }}
-					button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p2)') {{ question.possibleAnswer.p2 }}
-				div#answers-btn2
-					button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p3)') {{ question.possibleAnswer.p3 }}
-					button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p4)') {{ question.possibleAnswer.p4 }}
+				div.answers-btn-center
+					button.btn.btn.lg.answers-btn(ng-click='submitAnswer(question.possibleAnswer.p1)') {{ question.possibleAnswer.p1 }}
+					button.btn.btn.lg.answers-btn(ng-click='submitAnswer(question.possibleAnswer.p2)') {{ question.possibleAnswer.p2 }}
+				div.answers-btn-center
+					button.btn.btn.lg.answers-btn(ng-click='submitAnswer(question.possibleAnswer.p3)') {{ question.possibleAnswer.p3 }}
+					button.btn.btn.lg.answers-btn(ng-click='submitAnswer(question.possibleAnswer.p4)') {{ question.possibleAnswer.p4 }}
 		div(ng-if='!question && !gameEnded')
 			.jumbotron
 				div.center.hourglass

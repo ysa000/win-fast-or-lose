@@ -52,18 +52,11 @@ label {
 	border-radius: 5px;
 }
 
-#answers-btn1 {
-	margin-top: 20px;
+.answers-btn-center {
+	text-align: center;
 }
 
-.answers-btn-left {
-	display: inline-block;
-	margin-bottom: 20px;
-	margin-left: 30px;
-	width: 200px;
-}
-
-.answers-btn-right {
+.answers-btn {
 	display: inline-block;
 	margin-bottom: 20px;
 	margin-left: 30px;
