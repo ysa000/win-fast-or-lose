@@ -31,28 +31,31 @@ block gameDesc
 			img(src='/img/hourglass.gif', alt='hourglass')
 			p {{ waiting }}
 	div(ng-if='gameStarted && displayScore')
-		div.col-md-12
-			table.table.table-striped
-				tr
-					th In game
-					th Score
-				tr(ng-repeat='(username, score) in players')
-					td {{  username.toUpperCase() }}
-					td {{ score }}
-		.jumbotron(ng-if='question')
-			div.center
-				h3 {{ question.text }}
-				img(ng-src='{{ question.img }}' class='game-img')
-			div#answers-btn1
-				button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p1)') {{ question.possibleAnswer.p1 }}
-				button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p2)') {{ question.possibleAnswer.p2 }}
-			div#answers-btn2
-				button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p3)') {{ question.possibleAnswer.p3 }}
-				button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p4)') {{ question.possibleAnswer.p4 }}
-		.jumbotron(ng-if='!question && !gameEnded')
-			div.center.hourglass
-				h3 {{ result }}
-				img(src='/img/hourglass.gif', alt='hourglass')
+		div.row
+			div.col-md-12
+				table.table.table-striped
+					tr
+						th In game
+						th Score
+					tr(ng-repeat='(username, score) in players')
+						td {{  username.toUpperCase() }}
+						td {{ score }}
+		div(ng-if='question')
+			.jumbotron
+				div.center
+					h3 {{ question.text }}
+					img(ng-src='{{ question.img }}' class='game-img')
+				div#answers-btn1
+					button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p1)') {{ question.possibleAnswer.p1 }}
+					button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p2)') {{ question.possibleAnswer.p2 }}
+				div#answers-btn2
+					button.btn.btn.lg.answers-btn-left(ng-click='submitAnswer(question.possibleAnswer.p3)') {{ question.possibleAnswer.p3 }}
+					button.btn.btn.lg.answers-btn-right(ng-click='submitAnswer(question.possibleAnswer.p4)') {{ question.possibleAnswer.p4 }}
+		div(ng-if='!question && !gameEnded')
+			.jumbotron
+				div.center.hourglass
+					h3 {{ result }}
+					img(src='/img/hourglass.gif', alt='hourglass')
 	div(ng-if='gameEnded')
 		.jumbotron
 			div.center
